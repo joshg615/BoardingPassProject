@@ -3,8 +3,9 @@ package com.BoardingPass;
 import java.util.Scanner;
 
 public class InformationClass {
-    private String name, email, phoneNumber,gender,age;
-
+    private String name, email, gender;
+    private  long   phoneNumber;
+    private int age;
     InformationClass(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Hey lets book your trip today");
@@ -23,7 +24,7 @@ public class InformationClass {
         setName(name);
     }
 
-    InformationClass(String name, String email, String phoneNumber, String gender, String age){
+    InformationClass(String name, String email, long phoneNumber, String gender, int age){
         setName(name);
         setEmail(email);
         setPhoneNumber(phoneNumber);
@@ -53,11 +54,11 @@ public class InformationClass {
         email = email;
     }
 
-    public String getPhoneNumber() {
+    public long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(long phoneNumber) {
         phoneNumber = phoneNumber;
     }
 
@@ -69,11 +70,11 @@ public class InformationClass {
         gender = gender;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         age = age;
     }
 
