@@ -1,13 +1,26 @@
 package com.BoardingPass;
 
+import java.util.Scanner;
+
 public class InformationClass {
     private String name, email, phoneNumber,gender,age;
 
     InformationClass(){
-
+        Scanner scan = new Scanner(System.in);
         System.out.println("Hey lets book your trip today");
-
         System.out.println("Hey what's you name?");
+        String input = scan.nextLine();
+
+
+        setName(input);
+        setEmail(email);
+        setPhoneNumber(phoneNumber);
+        setGender(gender);
+        setAge(age);
+    }
+
+    InformationClass(String name){
+        setName(name);
     }
 
     InformationClass(String name, String email, String phoneNumber, String gender, String age){
@@ -18,6 +31,10 @@ public class InformationClass {
         setAge(age);
 
 
+    }
+
+    public String toString(){
+        return "name = " + getName() + " email= " + getEmail();
     }
 
     public String getName() {
