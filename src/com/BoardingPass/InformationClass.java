@@ -51,7 +51,7 @@ public class InformationClass {
     }
 
     public void setEmail(String email) {
-        email = email;
+        this.email = email;
     }
 
     public long getPhoneNumber() {
@@ -59,7 +59,7 @@ public class InformationClass {
     }
 
     public void setPhoneNumber(long phoneNumber) {
-        phoneNumber = phoneNumber;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getGender() {
@@ -67,7 +67,7 @@ public class InformationClass {
     }
 
     public void setGender(String gender) {
-        gender = gender;
+        this.gender = gender;
     }
 
     public int getAge() {
@@ -75,7 +75,7 @@ public class InformationClass {
     }
 
     public void setAge(int age) {
-        age = age;
+        this.age = age;
     }
 
 }
