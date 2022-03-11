@@ -27,8 +27,10 @@ public class InformationClass {
     InformationClass(String name, String email, long phoneNumber, String gender, int age){
         setName(name);
         setEmail(email);
+
         setPhoneNumber(phoneNumber);
         setGender(gender);
+
         setAge(age);
 
 
