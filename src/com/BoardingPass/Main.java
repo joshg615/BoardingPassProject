@@ -74,4 +74,32 @@ public class Main {
                 return  latLog;
         }
     }
+        public class PassNum {
+            public static void main(String[] args) {
+                Random randomObj = new Random();
+                Set set=new HashSet<Integer>();
+
+                for (int i = 1; i <= 99999; i++) {
+                    int randomNumber = randomObj.nextInt(4);
+                    if (!set.contains(randomNumber)){
+                        set.add(randomNumber);
+                        System.out.println(i + " Random No: " + randomNumber);
+                    }else i--;
+                }
+            }
+        }
+        public class PassNum {
+            public static void main(String[] args) {
+                Random randomObj = new Random();
+                Set set = new HashSet<Integer>();
+
+                for (int i = 1; i <= 1; i++) {
+                    int randomNumber = randomObj.nextInt(99999);
+                    if (!set.contains(randomNumber)) {
+                        set.add(randomNumber);
+                        System.out.println(i + " Boarding Pass Number: " + randomNumber);
+                    } else i--;
+                }
+            }
+        }
 }
